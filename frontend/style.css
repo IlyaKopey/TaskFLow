@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(186, 216, 226);
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+.task-section {
+    padding: 20px;
+    margin: 20px;
+}
