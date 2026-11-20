@@ -1,9 +1,16 @@
 body {
-    background-color: rgb(186, 216, 226);
+    background-color: rgb(212, 249, 255);
     color: #333333;
     font-family: Arial, sans-serif;
 }
 .task_section {
     padding: 20px;
     margin: 20px;
+    border: 1px solid black
+}
+.task_item {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid rgba(0, 4, 250, 0.596);
+    border-radius: 8px;
 }
