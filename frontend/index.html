@@ -40,7 +40,7 @@
                 required
             >
   
-            <label for="task_category">Категории задач</label>
+            <label for="task_category">Категория задачи</label>
 
             <select id="task_category" name="task_category">
                 <option value="html">Изучение HTML</option>
@@ -48,6 +48,16 @@
                 <option value="programming">Программирование</option>
                 <option value="other">Разное</option>
             </select>
+
+            <label for="task_description">Описание задачи</label>
+
+            <textarea 
+                id="task_description"
+                name="task_description"
+                placeholder="Опиши задачу"
+                rows="4"
+            ></textarea>
+
             <button type="submit">Создать задачу</button>  
         </form>
 
