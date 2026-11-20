@@ -14,51 +14,64 @@
         <section>
             <h2>Мои задачи</h2>
             <ul>
-                <li>Изучить HTML</li>
-                <li>Повторить Python</li>
-                <li>Позаниматься Английским</li>
+                <li>
+                    <input type="checkbox" id="task1">
+                    <label for="task1">Изучить HTML</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task2">
+                    <label for="task2">Повторить Python</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="task3">
+                    <label for="task3">Позаниматься Английским</label>
+                    
+                </li>
             </ul>
             <button type="button">Добавить задачу</button>
         </section>
         <form>
-            <label for="task_name">Название задачи</label>
+            <fieldset>
+                <label for="task_name">Название задачи</label>
+                <legend>Информация о задаче</legend>
+                
+                <input
+                    type="text"
+                    id="task_name"
+                    name="task_name"
+                    placeholder="Например, изучить HTML"
+                    required
+                >
 
-            <input
-                type="text"
-                id="task_name"
-                name="task_name"
-                placeholder="Например, изучить HTML"
-                required
-            >
+                <label for="task_date">Срок выполнения</label>
 
-            <label for="task_date">Срок выполнения</label>
+                <input
+                    type="date"
+                    id="task_date"
+                    name="task_date"
+                    required
+                >
+    
+                <label for="task_category">Категория задачи</label>
 
-            <input
-                type="date"
-                id="task_date"
-                name="task_date"
-                required
-            >
-  
-            <label for="task_category">Категория задачи</label>
+                <select id="task_category" name="task_category">
+                    <option value="html">Изучение HTML</option>
+                    <option value="english">Занятия Английским</option>
+                    <option value="programming">Программирование</option>
+                    <option value="other">Разное</option>
+                </select>
 
-            <select id="task_category" name="task_category">
-                <option value="html">Изучение HTML</option>
-                <option value="english">Занятия Английским</option>
-                <option value="programming">Программирование</option>
-                <option value="other">Разное</option>
-            </select>
+                <label for="task_description">Описание задачи</label>
 
-            <label for="task_description">Описание задачи</label>
+                <textarea 
+                    id="task_description"
+                    name="task_description"
+                    placeholder="Опиши задачу"
+                    rows="4"
+                ></textarea>
 
-            <textarea 
-                id="task_description"
-                name="task_description"
-                placeholder="Опиши задачу"
-                rows="4"
-            ></textarea>
-
-            <button type="submit">Создать задачу</button>  
+                <button type="submit">Создать задачу</button>
+            </fieldset>      
         </form>
 
     </main>
