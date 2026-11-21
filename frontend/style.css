@@ -91,16 +91,19 @@ main {
 
 .dashboard-actions button:hover {
     background-color: #3730a3;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .dashboard-actions button:last-child {
     background-color: white;
     color:#4f46e5;
     border: 1px solid #4f46e5
+    
 }
 
 .dashboard-actions button:last-child:hover {
     background-color: #d1b8ff;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .main_greetings h2 {
@@ -111,7 +114,7 @@ main {
 }
 
 .main_greetings p {
-    font-size: 15px;
+    font-size: 20px;
     color: #6b7380;
     margin: 0;
 }
@@ -122,3 +125,31 @@ main {
     gap: 12px;
 }
 
+.sidebar nav a.active {
+    background-color: #111827;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #9900ff77;
+}
+
+.sidebar nav a:not(.active):hover {
+    background-color: #f3f4f6;
+    color: #111827;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
+    color: #374151;
+    font-size: 15px;
+
+    padding: 12px 16px;
+    border-radius: 8px;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+}

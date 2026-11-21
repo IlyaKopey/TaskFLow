@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskFlow</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <div class="app-layout">
@@ -15,10 +16,22 @@
             </div>
 
             <nav>
-                <a href="#">Dashboard</a>
-                <a href="#">Tasks</a>
-                <a href="#">Projects</a>
-                <a href="#">Settings</a>
+                <a href="#" class="active">
+                    <i data-lucide="layout-dashboard"></i>
+                    Главная
+                </a>
+                <a href="#">
+                    <i data-lucide="list-checks"></i>
+                    Задачи
+                </a>
+                <a href="#">
+                    <i data-lucide="folder"></i>
+                    Проекты
+                </a>
+                <a href="#">
+                    <i data-lucide="settings"></i>
+                    Настройки
+                </a>
             </nav>
             
         </aside>
@@ -139,5 +152,8 @@
             </a>
         </nav>
     </footer>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
