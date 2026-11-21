@@ -7,126 +7,128 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <aside  class="sidebar">
-        <div class="logo">
-            <img src="images/logo.png" alt="Логотип TaskFlow" width="200">
-            <h1>TaskFlow</h1>
-            <p>Твой личный менеджер задач</p>
-        </div>
-
-        <nav>
-            <a href="#">Dashboard</a>
-            <a href="#">Tasks</a>
-            <a href="#">Projects</a>
-            <a href="#">Settings</a>
-        </nav>
-        
-    </aside>
-
-    <main>
-        <header class="dashboard-header">
-            <div class="main_greetings">
-                <h2>С возвращением!</h2>
-                <p>За работу?</p>
+    <div class="app-layout">
+        <aside  class="sidebar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип TaskFlow" width="200">
+                <h1>TaskFlow</h1>
+                <p>Твой личный менеджер задач</p>
             </div>
 
-            <div class="dashboard-actions">
+            <nav>
+                <a href="#">Dashboard</a>
+                <a href="#">Tasks</a>
+                <a href="#">Projects</a>
+                <a href="#">Settings</a>
+            </nav>
+            
+        </aside>
+
+        <main>
+            <header class="dashboard-header">
+                <div class="main_greetings">
+                    <h2>С возвращением!</h2>
+                    <p>За работу?</p>
+                </div>
+
+                <div class="dashboard-actions">
+                    <button type="button">Добавить задачу</button>
+                    <button type="button">Новый проект</button>
+                </div>
+            </header>
+            <section class="stats">
+                <div class="stat-card">
+                    <h3>Общее количество задач</h3>
+                    <p>2</p>
+                    <span>0 выполнено</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Активные проекты</h3>
+                    <p>1</p>
+                    <span>Все проекты</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Процент выполнения</h3>
+                    <p>0%</p>
+                    <span>Прогресс по задачам</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Задачи на сегодня</h3>
+                    <p>0</p>
+                    <span>К задачам</span>
+                </div>
+            </section>
+
+
+            <section class="task_section">
+                <h2>Мои задачи</h2>
+                <ul>
+                    <li class="task_item">
+                        <input type="checkbox" id="task1">
+                        <label for="task1">Изучить HTML</label>
+                    </li>
+                    <li class="task_item">
+                        <input type="checkbox" id="task2">
+                        <label for="task2">Повторить Python</label>
+                    </li>
+                    <li class="task_item">
+                        <input type="checkbox" id="task3">
+                        <label for="task3">Позаниматься Английским</label>
+                        
+                    </li>
+                </ul>
                 <button type="button">Добавить задачу</button>
-                <button type="button">Новый проект</button>
-            </div>
-        </header>
-        <section class="stats">
-            <div class="stat-card">
-                <h3>Общее количество задач</h3>
-                <p>2</p>
-                <span>0 выполнено</span>
-            </div>
-
-            <div class="stat-card">
-                <h3>Активные проекты</h3>
-                <p>1</p>
-                <span>Все проекты</span>
-            </div>
-
-            <div class="stat-card">
-                <h3>Процент выполнения</h3>
-                <p>0%</p>
-                <span>Прогресс по задачам</span>
-            </div>
-
-            <div class="stat-card">
-                <h3>Задачи на сегодня</h3>
-                <p>0</p>
-                <span>К задачам</span>
-            </div>
-        </section>
-
-
-        <section class="task_section">
-            <h2>Мои задачи</h2>
-            <ul>
-                <li class="task_item">
-                    <input type="checkbox" id="task1">
-                    <label for="task1">Изучить HTML</label>
-                </li>
-                <li class="task_item">
-                    <input type="checkbox" id="task2">
-                    <label for="task2">Повторить Python</label>
-                </li>
-                <li class="task_item">
-                    <input type="checkbox" id="task3">
-                    <label for="task3">Позаниматься Английским</label>
+            </section>
+            <form>
+                <fieldset>
+                    <legend>Информация о задаче</legend>
+                    <label for="task_name">Название задачи</label>
                     
-                </li>
-            </ul>
-            <button type="button">Добавить задачу</button>
-        </section>
-        <form>
-            <fieldset>
-                <legend>Информация о задаче</legend>
-                <label for="task_name">Название задачи</label>
-                
-                <input
-                    type="text"
-                    id="task_name"
-                    name="task_name"
-                    placeholder="Например, изучить HTML"
-                    required
-                >
+                    <input
+                        type="text"
+                        id="task_name"
+                        name="task_name"
+                        placeholder="Например, изучить HTML"
+                        required
+                    >
 
-                <label for="task_date">Срок выполнения</label>
+                    <label for="task_date">Срок выполнения</label>
 
-                <input
-                    type="date"
-                    id="task_date"
-                    name="task_date"
-                    required
-                >
-    
-                <label for="task_category">Категория задачи</label>
+                    <input
+                        type="date"
+                        id="task_date"
+                        name="task_date"
+                        required
+                    >
+        
+                    <label for="task_category">Категория задачи</label>
 
-                <select class="task_category" id="task_category" name="task_category">
-                    <option value="html">Изучение HTML</option>
-                    <option value="english">Занятия Английским</option>
-                    <option value="programming">Программирование</option>
-                    <option value="other">Разное</option>
-                </select>
+                    <select class="task_category" id="task_category" name="task_category">
+                        <option value="html">Изучение HTML</option>
+                        <option value="english">Занятия Английским</option>
+                        <option value="programming">Программирование</option>
+                        <option value="other">Разное</option>
+                    </select>
 
-                <label for="task_description">Описание задачи</label>
+                    <label for="task_description">Описание задачи</label>
 
-                <textarea 
-                    id="task_description"
-                    name="task_description"
-                    placeholder="Опиши задачу"
-                    rows="4"
-                ></textarea>
+                    <textarea 
+                        id="task_description"
+                        name="task_description"
+                        placeholder="Опиши задачу"
+                        rows="4"
+                    ></textarea>
 
-                
-            </fieldset>      
-        <button type="submit">Создать задачу</button>    
-        </form>
+                    
+                </fieldset>      
+            <button type="submit">Создать задачу</button>    
+            </form>
 
-    </main>
+        </main>
+    </div>
     <footer>
         <p>TaskFlow © Ilya Kopeykin</p>
         <nav>
