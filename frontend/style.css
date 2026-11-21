@@ -14,3 +14,8 @@ body {
     border: 1px solid rgba(0, 4, 250, 0.596);
     border-radius: 8px;
 }
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}

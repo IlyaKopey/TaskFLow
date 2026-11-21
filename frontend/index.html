@@ -7,12 +7,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>TaskFlow</h1>
-        <p>Твой личный менеджер задач</p>
-        <img src="images/logo.png" alt="Логотип TaskFlow" width="200">
-    </header>
+    <aside  class="sidebar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип TaskFlow" width="200">
+            <h1>TaskFlow</h1>
+            <p>Твой личный менеджер задач</p>
+        </div>
+
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="#">Tasks</a>
+            <a href="#">Projects</a>
+            <a href="#">Settings</a>
+        </nav>
+        
+    </aside>
+
     <main>
+        <header class="dashboard-header">
+            <div class="main_greetings">
+                <h2>С возвращением!</h2>
+                <p>За работу?</p>
+            </div>
+
+            <div class="dashboard-actions">
+                <button type="button">Добавить задачу</button>
+                <button type="button">Новый проект</button>
+            </div>
+        </header>
+        <section class="stats">
+            <div class="stat-card">
+                <h3>Общее количество задач</h3>
+                <p>2</p>
+                <span>0 выполнено</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Активные проекты</h3>
+                <p>1</p>
+                <span>Все проекты</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Процент выполнения</h3>
+                <p>0%</p>
+                <span>Прогресс по задачам</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Задачи на сегодня</h3>
+                <p>0</p>
+                <span>К задачам</span>
+            </div>
+        </section>
+
+
         <section class="task_section">
             <h2>Мои задачи</h2>
             <ul>
