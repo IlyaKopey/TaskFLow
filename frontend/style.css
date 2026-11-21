@@ -44,3 +44,15 @@ body {
     font-size: 14px;
     color: #777777;
 }
+
+.sidebar {
+    width: 230px;
+    min-height: 100vh;
+    padding: 24px;
+    box-sizing: border-box;
+    margin: 10px;
+
+    background-color: white;
+    border-right: 2px solid #e5e7eb;
+    flex-shrink: 0;
+}
