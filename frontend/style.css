@@ -29,9 +29,16 @@ body {
     background-color: white;
     padding: 20px;
     border-radius: 12px;
-    border: 1px solid black;
+    border: 1px solid #e5e7eb;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transfrom 0.2s ease, box-shadow 0.2s ease;
 }
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
 .stat-card h3 {
     font-size: 16px;
     font-weight: 600;
@@ -107,4 +114,10 @@ main {
     font-size: 15px;
     color: #6b7380;
     margin: 0;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
